@@ -13,7 +13,6 @@ function data() {
     if (dataPass.length > 0 && dataName.length > 0) {
         insertData.innerHTML = 'User name: ' + dataName + '</br>' + 'Password: ' + dataPass;
         localStorage.setItem("User Name ", dataName);
-        localStorage.setItem("Password:", dataPass);
-        return insertData.innerHTML;
+        localStorage.setItem("Password:", dataPass);        
     } alert ('Введите имя и пароль');     
 };

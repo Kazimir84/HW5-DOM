@@ -11,9 +11,9 @@ function data() {
   let dataName = nameInput.value;      
   let dataPass = passwordInput.value;    
     if (dataPass.length > 0 && dataName.length > 0) {
-        let allData = insertData.innerHTML = 'User name: ' + dataName + '</br>' + 'Password: ' + dataPass;
+        insertData.innerHTML = 'User name: ' + dataName + '</br>' + 'Password: ' + dataPass;
         localStorage.setItem("User Name ", dataName);
         localStorage.setItem("Password:", dataPass);
-        return allData;
+        return insertData.innerHTML;
     } alert ('Введите имя и пароль');     
 };

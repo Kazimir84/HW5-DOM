@@ -17,4 +17,3 @@ function data() {
         return allData;
     } alert ('Введите имя и пароль');     
 };
-
